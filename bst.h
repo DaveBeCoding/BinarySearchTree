@@ -8,8 +8,11 @@ class BST{
             node* right;
         };
         node* root;
-
+        void AddLeafPrivate(int key, node* ptr);
+        void PrintInOrderPrivate(node *ptr);
     public:
         BST();
         node* CreateLeaf(int key);
+        void AddLeaf(int key);
+        void PrintInOrder();
 };

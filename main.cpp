@@ -4,7 +4,18 @@
 using namespace std;
 
 int main(){
+    int treeKeys[16] = {68,83,14,12,87,55,97,31,90,3,12,51,73,58,66,45};
+    int len = *(&treeKeys + 1) - treeKeys;
+    BST myTree;
 
+    cout << "Printing the Tree in Order, before adding numbers\n";
+    myTree.PrintInOrder();
+    
+    for (auto i = 0; i < len; i++){myTree.AddLeaf(treeKeys[i]);}
+    
+    cout << "Printing the Tree in Order, After adding numbers\n";
+    myTree.PrintInOrder();
+    cout << "\n";
 return 0;}//end main
 
 /*
