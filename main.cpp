@@ -16,6 +16,8 @@ int main(){
     cout << "Printing the Tree in Order, After adding numbers\n";
     myTree.PrintInOrder();
     cout << "\n";
+    // myTree.PrintChildren(myTree.ReturnRootKey());
+    for (auto i = 0; i < len; i++){myTree.PrintChildren(treeKeys[i]); cout << endl;}
 return 0;}//end main
 
 /*
@@ -25,4 +27,7 @@ In-Order Traversal
 2) Process Current Node
 3) Go right
 
+boolean ?
+true :
+false
 */
